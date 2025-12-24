@@ -172,14 +172,15 @@ img {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
+    min-height: 100vh;
+    padding-top: 80px;
+    /* Prevent content from being hidden behind navbar */
     background: url('assets/images/crowd_bidding.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
     color: white;
-    margin-top: -80px;
-    /* Offset navbar */
+    /* margin-top: -80px; Removed to prevent cutoff */
 }
 
 .hero-overlay {
@@ -548,15 +549,18 @@ cite {
 
 /* Event Section */
 .event-section {
-    background: linear-gradient(135deg, var(--bg-off-white) 0%, #e6efff 100%);
+    background: white;
+    /* Removed light blue gradient */
     position: relative;
-    padding: 80px 0;
+    padding: 40px 0;
+    /* Reduced from 80px */
 }
 
 .event-card {
     background: white;
     border-radius: 20px;
-    padding: 60px 40px;
+    padding: 40px 30px;
+    /* Reduced from 60px 40px */
     box-shadow: 0 15px 40px rgba(0, 45, 114, 0.1);
     text-align: center;
     position: relative;
@@ -584,8 +588,10 @@ cite {
 .event-details-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    margin: 50px 0;
+    gap: 20px;
+    /* Reduced from 30px */
+    margin: 30px 0;
+    /* Reduced from 50px */
 }
 
 .event-item {
