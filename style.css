@@ -545,3 +545,108 @@ cite {
         transform: translateY(20px);
     }
 }
+
+/* Event Section */
+.event-section {
+    background: linear-gradient(135deg, var(--bg-off-white) 0%, #e6efff 100%);
+    position: relative;
+    padding: 80px 0;
+}
+
+.event-card {
+    background: white;
+    border-radius: 20px;
+    padding: 60px 40px;
+    box-shadow: 0 15px 40px rgba(0, 45, 114, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0, 45, 114, 0.05);
+}
+
+/* Decorative background element */
+.event-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+}
+
+.event-header h2 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.event-details-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin: 50px 0;
+}
+
+.event-item {
+    padding: 20px;
+}
+
+.icon-box {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    background: var(--bg-off-white);
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    box-shadow: var(--shadow-sm);
+}
+
+.event-item h4 {
+    color: var(--accent-color);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+@media (max-width: 768px) {
+    .event-details-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .event-card {
+        padding: 40px 20px;
+    }
+
+    .event-header h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Hero Announcement */
+.hero-announcement {
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border-left: 3px solid var(--accent-color);
+}
